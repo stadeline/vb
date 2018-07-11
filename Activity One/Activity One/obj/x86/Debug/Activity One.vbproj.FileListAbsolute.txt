@@ -1,0 +1,9 @@
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\bin\Debug\Activity One.exe
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\bin\Debug\Activity One.pdb
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\bin\Debug\Activity One.xml
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\obj\x86\Debug\Activity One.vbproj.GenerateResource.Cache
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\obj\x86\Debug\Activity One.exe
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\obj\x86\Debug\Activity One.xml
+C:\Users\TagStart\Documents\Visual Studio 2010\Projects\Activity One\Activity One\obj\x86\Debug\Activity One.pdb
