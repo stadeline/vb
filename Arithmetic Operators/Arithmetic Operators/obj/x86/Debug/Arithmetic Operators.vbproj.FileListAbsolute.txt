@@ -7,3 +7,6 @@ C:\Users\TagStart\documents\visual studio 2010\Projects\Arithmetic Operators\Ari
 C:\Users\TagStart\documents\visual studio 2010\Projects\Arithmetic Operators\Arithmetic Operators\obj\x86\Debug\Arithmetic Operators.exe
 C:\Users\TagStart\documents\visual studio 2010\Projects\Arithmetic Operators\Arithmetic Operators\obj\x86\Debug\Arithmetic Operators.xml
 C:\Users\TagStart\documents\visual studio 2010\Projects\Arithmetic Operators\Arithmetic Operators\obj\x86\Debug\Arithmetic Operators.pdb
+C:\Users\TagStart\Desktop\School\vb\Arithmetic Operators\Arithmetic Operators\obj\x86\Debug\Arithmetic Operators.exe
+C:\Users\TagStart\Desktop\School\vb\Arithmetic Operators\Arithmetic Operators\obj\x86\Debug\Arithmetic Operators.xml
+C:\Users\TagStart\Desktop\School\vb\Arithmetic Operators\Arithmetic Operators\obj\x86\Debug\Arithmetic Operators.pdb

@@ -1,0 +1,9 @@
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\bin\Debug\Simple Ordering Application.exe
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\bin\Debug\Simple Ordering Application.pdb
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\bin\Debug\Simple Ordering Application.xml
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\obj\x86\Debug\Simple_Ordering_Application.Form1.resources
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\obj\x86\Debug\Simple_Ordering_Application.Resources.resources
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\obj\x86\Debug\Simple Ordering Application.vbproj.GenerateResource.Cache
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\obj\x86\Debug\Simple Ordering Application.exe
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\obj\x86\Debug\Simple Ordering Application.xml
+C:\Users\TagStart\AppData\Local\Temporary Projects\Simple Ordering Application\obj\x86\Debug\Simple Ordering Application.pdb
