@@ -1,11 +1,38 @@
 ﻿Public Class MainForm
 
+    'This took a really long time, so make it look pretty
+    'Plus practice recursion :)
+    Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.BackColor = Color.FromArgb(136, 152, 170)
+        'me.controls doesn't work since it'll only return the parents (panels)
+        For Each ctrl As Control In Me.Controls
+            If TypeOf ctrl Is Panel Then
+                'Go deeper
+                For Each ctrlInner As Control In ctrl.Controls
+                    If TypeOf ctrlInner Is Button Then
+                        'Stripe Color
+                        ctrlInner.BackColor = Color.FromArgb(103, 114, 229)
+                        ctrlInner.ForeColor = Color.White
+                    ElseIf TypeOf ctrlInner Is Label Then
+                        ctrlInner.ForeColor = Color.FromArgb(50, 50, 93)
+                    ElseIf TypeOf ctrlInner Is Panel Then
+                        For Each ctrlInnerInner In ctrlInner.Controls
+                            ctrlInnerInner.ForeColor = Color.FromArgb(50, 50, 93)
+                        Next
+                    End If
+                Next
+            End If
+        Next
+    End Sub
+
     'Track the currently selected row in the main list view locally.
     Public currentlySelectedRow As String
     'Track the type of void being currently used.
     Public currentVoidType As String
     'Total bill
     Dim totalBill = 0
+    'Transaction number
+    Public transactionNumber = 1
 
     'Clear current transaction
     Sub clearCurrentTransaction()
@@ -19,6 +46,8 @@
     Sub clearAll()
         clearCurrentTransaction()
         currentOrderList.Items.Clear()
+        'Reset pricing as well.
+        computeTotalBills()
         Button1.Enabled = False
         Button2.Enabled = False
         Button3.Enabled = False
@@ -45,6 +74,12 @@
             totalBill += Val(rowItem.SubItems(3).text)
         Next
         outTotalBills.Text = "PHP " & totalBill
+        'If the total bill is greater than 0, enable payments.
+        If totalBill > 0 Then
+            Button4.Enabled = True
+        Else
+            Button4.Enabled = False
+        End If
     End Sub
 
 
@@ -86,13 +121,12 @@
         rowItem.SubItems.Add(outItemPrice.Text)
         rowItem.SubItems.Add(outTotalPrice.Text)
         computeTotalBills()
-        'Enable Void Buttons
-        Button2.Enabled = True
-        Button3.Enabled = True
         'Reset Current Item
         clearCurrentTransaction()
         'Disable Add to cart button
         Button1.Enabled = False
+        'Enable Void Transaction Button
+        Button3.Enabled = True
     End Sub
 
     'Void Item
@@ -109,9 +143,14 @@
 
     'Track currently selected item.
     Private Sub currentOrderList_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles currentOrderList.Click
-        For Each listItem In currentOrderList.SelectedItems
-            currentlySelectedRow = listItem.Index
-        Next
+        'Check if the list is empty
+        If currentOrderList.Items.Count <> 0 Then
+            For Each listItem In currentOrderList.SelectedItems
+                currentlySelectedRow = listItem.Index
+            Next
+            'Enable Void Button
+            Button2.Enabled = True
+        End If
     End Sub
 
 
@@ -120,4 +159,5 @@
         Payment.paymentTotalBill.Text = totalBill
         Payment.ShowDialog()
     End Sub
+
 End Class

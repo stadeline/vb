@@ -32,6 +32,7 @@ Partial Class MainForm
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -53,7 +54,6 @@ Partial Class MainForm
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.TopPanel.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -89,6 +89,7 @@ Partial Class MainForm
         '
         Me.outTotalBills.AutoSize = True
         Me.outTotalBills.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.outTotalBills.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.outTotalBills.Location = New System.Drawing.Point(180, 40)
         Me.outTotalBills.Name = "outTotalBills"
         Me.outTotalBills.Size = New System.Drawing.Size(77, 21)
@@ -100,11 +101,12 @@ Partial Class MainForm
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(229, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(78, 40)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(108, 21)
+        Me.Label2.Size = New System.Drawing.Size(99, 21)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "TOTAL BILLS: "
+        Me.Label2.Text = "TOTAL BILL: "
         '
         'Panel2
         '
@@ -164,35 +166,65 @@ Partial Class MainForm
         Me.Panel4.Size = New System.Drawing.Size(1000, 100)
         Me.Panel4.TabIndex = 1
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.SystemColors.Control
+        Me.Button4.Enabled = False
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(699, 36)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(175, 29)
+        Me.Button4.TabIndex = 13
+        Me.Button4.Text = "&PAYMENT"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.SystemColors.Control
         Me.Button3.Enabled = False
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Location = New System.Drawing.Point(508, 36)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(175, 29)
         Me.Button3.TabIndex = 12
         Me.Button3.Text = "&VOID TRANSACTION"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.SystemColors.Control
         Me.Button2.Enabled = False
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Location = New System.Drawing.Point(317, 36)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(175, 29)
         Me.Button2.TabIndex = 11
         Me.Button2.Text = "&VOID ITEM"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.Control
         Me.Button1.Enabled = False
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Location = New System.Drawing.Point(126, 36)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(175, 29)
         Me.Button1.TabIndex = 10
         Me.Button1.Text = "&ADD TO CART"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel5
         '
@@ -209,6 +241,7 @@ Partial Class MainForm
         Me.currentOrderList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.currentOrderList.FullRowSelect = True
         Me.currentOrderList.GridLines = True
+        Me.currentOrderList.HideSelection = False
         Me.currentOrderList.Location = New System.Drawing.Point(0, 0)
         Me.currentOrderList.Name = "currentOrderList"
         Me.currentOrderList.Size = New System.Drawing.Size(500, 600)
@@ -291,12 +324,17 @@ Partial Class MainForm
         '
         'searchButton
         '
+        Me.searchButton.BackColor = System.Drawing.SystemColors.Control
+        Me.searchButton.FlatAppearance.BorderSize = 0
+        Me.searchButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.searchButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.searchButton.Location = New System.Drawing.Point(350, 2)
         Me.searchButton.Name = "searchButton"
         Me.searchButton.Size = New System.Drawing.Size(100, 29)
         Me.searchButton.TabIndex = 9
         Me.searchButton.Text = "&SEARCH"
-        Me.searchButton.UseVisualStyleBackColor = True
+        Me.searchButton.UseVisualStyleBackColor = False
         '
         'inSearch
         '
@@ -349,15 +387,6 @@ Partial Class MainForm
         Me.Label4.Size = New System.Drawing.Size(175, 21)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "SEARCH BY ITEM CODE:"
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(699, 36)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(175, 29)
-        Me.Button4.TabIndex = 13
-        Me.Button4.Text = "&PAYMENT"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'MainForm
         '

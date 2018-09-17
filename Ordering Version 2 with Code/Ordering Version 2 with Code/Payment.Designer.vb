@@ -83,17 +83,24 @@ Partial Class Payment
         '
         'confirmButton
         '
+        Me.confirmButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(114, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.confirmButton.FlatAppearance.BorderSize = 0
+        Me.confirmButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(191, Byte), Integer))
+        Me.confirmButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(149, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.confirmButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.confirmButton.ForeColor = System.Drawing.Color.White
         Me.confirmButton.Location = New System.Drawing.Point(150, 159)
         Me.confirmButton.Name = "confirmButton"
         Me.confirmButton.Size = New System.Drawing.Size(100, 29)
         Me.confirmButton.TabIndex = 16
         Me.confirmButton.Text = "&COMPUTE"
-        Me.confirmButton.UseVisualStyleBackColor = True
+        Me.confirmButton.UseVisualStyleBackColor = False
         '
         'Payment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(136, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(170, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(400, 200)
         Me.Controls.Add(Me.confirmButton)
         Me.Controls.Add(Me.outChange)
