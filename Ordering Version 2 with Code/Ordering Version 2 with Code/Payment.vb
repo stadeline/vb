@@ -20,6 +20,9 @@
                     End If
                 Next
             End If
+            If TypeOf ctrl Is Label Then
+                ctrl.ForeColor = Color.FromArgb(50, 50, 93)
+            End If
         Next
     End Sub
 

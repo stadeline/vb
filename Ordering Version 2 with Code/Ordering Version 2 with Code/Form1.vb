@@ -16,6 +16,7 @@
                     ElseIf TypeOf ctrlInner Is Label Then
                         ctrlInner.ForeColor = Color.FromArgb(50, 50, 93)
                     ElseIf TypeOf ctrlInner Is Panel Then
+                        'One last nest for labels inside two panels.
                         For Each ctrlInnerInner In ctrlInner.Controls
                             ctrlInnerInner.ForeColor = Color.FromArgb(50, 50, 93)
                         Next
